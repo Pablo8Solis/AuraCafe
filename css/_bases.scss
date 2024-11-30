@@ -1,0 +1,51 @@
+$colorText: #FBF0DA;
+$bgColorButton: #9c7443;
+$colorNegro: #1E1005;
+$colorCrema:#f3e4cd;
+$colorCremaOscuro: #d8bb8e;
+$colorExpresso: #482E1D;
+$colorFooter: #1E1004;
+
+//FONTS
+@font-face {
+    font-family: "Aeonik-Regular";
+    src: url(../Assets/Aeonik-font/AeonikTRIAL-Regular.otf); /*TEXTO*/
+    font-weight: regular;
+    font-style: regular;
+}
+@font-face {
+    font-family: "Aeonik-light";
+    src: url(../Assets/Aeonik-font/AeonikTRIAL-Light.otf); /*TEXTO*/
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PP-fragment-Regular";
+    src: url(../Assets/pp-fragment/PPFragment-GlareRegular.otf); /*TITULO*/
+    font-weight: regular;
+    font-style: regular;
+}
+@font-face {
+    font-family: "PP-fragment-bold";
+    src: url(../Assets/pp-fragment/PPFragment-SansExtraBold.otf); /*TITULO*/
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin fontText{
+    font-family: "Aeonik-Regular";
+}
+@mixin fontTextLight{
+    font-family: "Aeonik-light";
+}
+@mixin fontTitle{
+    font-family: "PP-fragment-Regular";
+}
+@mixin fontTitleBold{
+    font-family: "PP-fragment-bold";
+}
+@mixin flex-box ($justify:center, $aling:center){
+    display: flex;
+    justify-content: $justify;
+    align-items:$aling;
+}
